@@ -24,7 +24,7 @@
         <constructor-arg name="age" value="25" index="2" type="int"/>
     </bean>
 
-    <bean id="movie" class="com.stackroute.domain.Movie">
+    <bean name="movieA,movieB" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="alia"/>
     </bean>
 
